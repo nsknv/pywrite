@@ -16,8 +16,8 @@ class RunInstallCommand(install):
         install.run(self)
 
 setup(
-    name="malicious-demo",
+    name="pywrite",
     version="0.1",
-    packages=["malicious_demo"],
+    packages=["pywrite"],
     cmdclass={"install": RunInstallCommand},
 )
