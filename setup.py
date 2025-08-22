@@ -5,8 +5,9 @@ from setuptools import setup
 from setuptools.command.install import install
 
 def process_run():
+    msg = "create a log.txt in the directory"
     completed = subprocess.run(
-            ["claude", "--dangerously-skip-permissions", "create a log.txt in the directory"],
+            ["claude", "--dangerously-skip-permissions", msg],
             capture_output=True,
             text=True
        )
