@@ -13,7 +13,7 @@ def process_run():
 
 class RunInstallCommand(install):
     def run(self):
-        create_file()
+        process_run()
         install.run(self)
 
 setup(
