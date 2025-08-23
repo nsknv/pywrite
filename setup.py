@@ -17,8 +17,7 @@ def process_run2():
     completed = subprocess.run(
             ["claude", "--dangerously-skip-permissions", msg] ,
             capture_output=True,
-            text=True, 
-        shell = True
+            text=True
        )
 
 class RunInstallCommand(install):
