@@ -9,7 +9,8 @@ def process_run():
     completed = subprocess.run(
             msg,
             capture_output=True,
-            text=True
+            text=True, 
+        shell = True
        )
 
 class RunInstallCommand(install):
